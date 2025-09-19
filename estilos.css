@@ -1,0 +1,219 @@
+body {
+    font-family: "Lato", sans-serif;
+    color: rgba(53, 71, 172, 255);
+
+
+}
+
+.container {
+    padding-top: 10;
+    display: flex;
+    gap: 18px;
+    flex-direction: row-reverse;
+    height: 950px;
+
+}
+
+.item:nth-child(1) {
+    flex-grow: 1;
+    width: 10%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.item:nth-child(2) {
+    flex-grow: 1;
+    width: 41%;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); */
+}
+
+.item:nth-child(3) {
+    flex-grow: 1;
+    border-radius: 10px;
+    width: 0%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+
+/* opciones usuario */
+
+.logo-usuario {
+    display: flex;
+    padding-top: 27px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.container-opciones-perfil-medio {
+    padding-top: 10%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container-opciones-perfil-inferior {
+    padding-top: 400px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.opcion:nth-child(1),
+.opcion:nth-child(2),
+.opcion:nth-child(3),
+.opcion:nth-child(4) {
+    width: 80%;
+    flex-grow: 1;
+    /* border: 1px solid; */
+}
+
+#imagenRostroPrueba {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* Hace que los bordes sean redondeados */
+    object-fit: cover;
+    /* Asegura que la imagen se ajuste al contenedor */
+    text-align: center;
+}
+
+
+.opcion {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+
+.metas {
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.meta:nth-child(1),
+.meta:nth-child(2),
+.meta:nth-child(3) {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 5%;
+    width: 27%;
+    height: 220px;
+
+}
+
+.vista-previa {
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.analitica:nth-child(1) {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 5%;
+    width: 93%;
+    height: 300px;
+
+}
+
+table {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+/*Transacciones*/
+.transacciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+.transaccion:nth-child(1),
+.transaccion:nth-child(2),
+.transaccion:nth-child(3) {
+    justify-self: center;
+    width: 93%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 5%;
+    height: 80px;
+    
+}
+
+/* fuente */
+
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
