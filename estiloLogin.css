@@ -71,7 +71,7 @@ td{
     
 }
 
-
+/*Elimina el contorno que se marca al clickear por los input*/
 input:focus {
   outline: none;
 }
