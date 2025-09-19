@@ -5,56 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estiloLogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
     <title>Document</title>
 </head>
 
 <body>
     <div class="login">
-        <div class="container" style="display:flex; flex-direction: row; justify-content: space-between;   border-radius: 10px;box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3); background-color: transparent;">
+        <div class="container">
 
 
-            <div class="cajaLogin" style="border-color: black; width: max-content; background-color: white;">
-                <form action="submit" style="display: flex; flex-direction: column; align-items: center; justify-content: center;" >
-                    <ul style="padding: 10px;">
-                        <li style="display: flex; justify-content: space-between; padding: 10px;">
-                            <label style="padding-right: 5px;">Usuario</label>
-                            <input type="text" placeholder="CESDE" style="border: none; border-bottom: 1px solid black;"/>
+            <div class="cajaLogin" >
+                <form class="formIniciarSesion" >
+                    <ul >
+                        <li>
+                            <label style="padding-right: 5px;">USUARIO</label>
+                            <input class="campoLogin" type="text" placeholder="Ingrese usuario"/>
                         </li>
-                        <li style="display: flex; justify-content: space-between; padding: 10px;">
+                        <li >
 
-                            <label>Usuario</label>
-                            <input type="password" placeholder="Ingrese contraseña..." />
+                            <label style="padding-right: 5px;">CONTRASEÑA </label>
+                            <input class="campoLogin" type="password" placeholder="Ingrese contraseña" />
                         </li>
 
                        
                     </ul>
-                     <button type="submit">Iniciar sesión</button>
-
+                    
+                     <button type="submit" class="botonIniciarSesion" ><a href="index.html" style="color: white; text-decoration: none;">Iniciar sesión</a></button>
+                        
 
                 </form>
 
 
 
             </div>
-            <div class="cajaRegister" style=" width: max-content; border-radius: 10px;  ">
-                <form action="submit">
-                    <ul style="padding: 10px;">
-                        <li style="display: flex; justify-content: space-between; padding: 10px;">
-                            <label style="padding-right: 5px;">Usuario</label>
-                            <input type="text" placeholder="Ingrese nombre de usuario..." />
+            <div class="cajaRegister">
+                <form class="formRegistrarse" action="submit">
+                    <ul>
+                        <li>
+                            <label style="padding-right: 5px;">NOMBRE </label>
+                            <input class="campoLoginRegistro" type="text" placeholder="Ingrese nombre de usuario"  />
                         </li>
-                        <li style="display: flex; justify-content: space-between; padding: 10px; ">
+                        <li>
 
-                            <label style="padding-right: 5px;">Usuario</label>
-                            <input type="password" placeholder="Ingrese contraseña..." />
+                            <label style="padding-right: 5px;">USUARIO</label>
+                            <input class="campoLoginRegistro" type="text" placeholder="Ingrese contraseña"  class="placeholderblanco" />
                         </li>
                         <div>
-                        <button type="submit">Iniciar sesión</button>
-                        
-                        
+                        <li>
+                            <label style="padding-right: 5px;">CORREO</label>
+                            <input class="campoLoginRegistro" type="email" placeholder="Ingrese nombre de usuario"  class="placeholderblanco"/>
+                        </li>
+                        <li>
 
+                            <label style="padding-right: 5px;">CONTRASEÑA </label>
+                            <input class="campoLoginRegistro" type="password" placeholder="Ingrese contraseña"  class="placeholderblanco"/>
+                        </li>
+                        <div>
                     </ul>
-
+                    <button type="submit" class="botonRegistrarse">Registrarse</button>
 
                 </form>
 
