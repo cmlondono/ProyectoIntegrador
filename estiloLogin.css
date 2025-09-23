@@ -3,11 +3,9 @@ body {
     color: rgba(53, 71, 172, 255);
     background-color: rgba(250, 250, 252);
 }
-
 label {
     padding-right: 5px;
 }
-
 .login {
     display: flex;
     gap: 2%;
@@ -15,7 +13,6 @@ label {
     justify-content: space-around;
     padding-top: 10%;
 }
-
 .container {
     display: flex;
     flex-direction: row;
@@ -24,24 +21,19 @@ label {
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
     background-color: rgba(53, 71, 172, 255);
 }
-
 .cajaLogin {
-
     display: flex;
     flex-direction: column-reverse;
     border-color: black;
     width: max-content;
     background-color: rgb(255, 255, 255);
-
 }
-
 .cajaRegister {
     width: max-content;
     border-radius: 10px;
     background-color: transparent;
     margin-top: 10px;
 }
-
 .cajaLogin:nth-child(1) {
     width: 38%;
     height: 32%;
@@ -50,89 +42,69 @@ label {
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     width: max-content;
-
 }
-
 td {
     border: 1px solid;
     height: 390px;
     width: 500px;
 }
-
 /*Campos del login*/
 .campoLogin {
     border: none;
     border-bottom: 1px solid rgba(53, 71, 172, 255);
     background-color: transparent;
 }
-
 .campoLoginRegistro {
     border: none;
     border-bottom: 1px solid rgb(255, 255, 255);
     background-color: transparent;
     color: white;
-
 }
-
 /*Elimina el contorno que se marca al clickear por los input*/
 input:focus {
     outline: none;
 }
-
 .campoLoginRegistro::placeholder {
     color: rgba(255, 255, 255, 0.247);
 }
-
 ul {
     padding: 10px;
 }
-
 li {
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
-
 /*boton submit*/
 .botonIniciarSesion {
     border-radius: 8px;
     height: 30px;
     background-color: rgba(53, 71, 172, 255);
     color: rgb(255, 255, 255);
-
 }
-
 .botonRegistrarse {
     border-radius: 8px;
     height: 30px;
     background-color: white;
     color: rgb(0, 0, 0);
 }
-
 .formIniciarSesion {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
-
-
 }
-
 .formRegistrarse {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
-
 }
-
 .placeholderblanco::placeholder {
     color: rgb(255, 255, 255);
 }
-
-
 /* .containter{
     display:flex; 
     flex-direction: row; 
@@ -145,7 +117,6 @@ li {
         display: none;
     }
 }
-
 @media screen and (max-width:400px) {
     /* estilos para inicio de sesión */
     body{
@@ -164,7 +135,7 @@ li {
     align-self: stretch;
     height: 250px;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px rgb(6, 0, 0);
+    box-shadow: 0px 0px 12px 0px rgb(255, 255, 255);
     width:200px;
     font-size: 10px;
 }
@@ -179,14 +150,7 @@ li {
     justify-content: center;
     padding: -5px;
 }
-.botonIniciarSesion {
-    font-size: 8px;
-    border-radius: 8px;
-    height: 25px;
-    background-color: rgba(53, 71, 172, 255);
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-}
+
 .formIniciarSesion {
     display: flex;
     flex-direction: column;
@@ -195,12 +159,15 @@ li {
     margin-bottom: 10px;
 }
 /* estilos para registro */
-.botonRegistro{
-    font-size: 10px;
-    margin-top: 15px;
-    margin-bottom: 12px;
-     border:none;
-     background-color: white;
+.botonRegistro {
+    font-size: 8px;
+    border: none;
+    border-radius: 14px;
+    height: 25px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+     
 }
 .cajaRegistro {
     display: flex;
@@ -236,7 +203,7 @@ li {
   font-weight: 200;
 }
 .formRegistro ul {
-    margin-top:  -10px;
+    margin-top:  -25px;
 }
 .formRegistro{
      display: flex;

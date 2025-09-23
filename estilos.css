@@ -1,8 +1,6 @@
 body {
     font-family: "Lato", sans-serif;
     color: rgba(53, 71, 172, 255);
-
-
 }
 
 .container {
@@ -11,7 +9,10 @@ body {
     gap: 18px;
     flex-direction: row-reverse;
     height: 950px;
+}
 
+#contenedorMeta {
+    display: flex;
 }
 
 .item:nth-child(1) {
@@ -61,7 +62,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
+
 }
 
 .opcion:nth-child(1),
@@ -74,7 +75,7 @@ body {
     /* border: 1px solid; */
 }
 
-.iconoNav{
+.iconoNav {
     padding-right: 10px;
 }
 
@@ -159,7 +160,7 @@ table {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     margin-top: 5%;
     height: 80px;
-    
+
 }
 
 /* fuente */
@@ -222,4 +223,18 @@ table {
     font-family: "Lato", sans-serif;
     font-weight: 900;
     font-style: italic;
+}
+
+ @media screen and (min-width:400px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 98.3%;
+        border: solid red;
+        font-family: "Lato", sans-serif;
+        color: rgba(53, 71, 172, 255);
+    }
 }
