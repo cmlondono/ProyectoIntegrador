@@ -307,12 +307,13 @@ body {
         width: 25px;
         border: none;
         background-color: none;
+        filter: ;
     }
 
     .containerOpciones {
         display: flex;
         flex-direction: column;
-        gap: 75%;
+        gap: 70%;
         height: auto;
         position: fixed;
         top: 0;
