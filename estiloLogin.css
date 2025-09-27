@@ -112,12 +112,12 @@ li {
     border-radius: 10px;box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3); 
     background-color: transparent;
 } */
-@media screen and (min-width:400px) {
+@media screen and (min-width:431px) {
     .botonRegistro{
         display: none;
     }
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:430px) {
     /* estilos para inicio de sesión */
     body{
     display: flex;
