@@ -1,0 +1,142 @@
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+#flecha{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    margin-left: 5px;
+}
+
+a {
+   
+    background-color: white;
+}
+
+button{
+    background-color: white;
+    border: none;
+}
+
+.vista-previa {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+   
+}
+
+.analitica {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 5%;
+    width: 70%;
+    height: 140px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+#titulo {
+    width: 93%;
+    text-align: center;
+    height: 20px;
+}
+.bar-inner{
+   margin-top: 5px;
+   border-radius: 5px;
+   border: 1px solid rgba(0, 0, 0, 0.29);
+}
+table {
+    border: solid red;
+    width: 40%;
+    height: 20px;
+    border-collapse: collapse;
+    gap: 2%;
+}
+.barra{
+    margin-top: 10px;
+}
+
+
+@media screen  and (max-width:431px){
+    
+
+* {
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+}
+#flecha{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    margin-left: 5px;
+}
+
+a {
+   
+    background-color: white;
+}
+
+button{
+    background-color: white;
+    border: none;
+}
+
+.vista-previa {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+   
+}
+#label{
+    margin-left: 38%;
+    
+
+
+}
+.analitica {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 5%;
+    width: 93%;
+    height: 140px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+#titulo {
+    width: 93%;
+    text-align: center;
+    height: 20px;
+}
+.bar-inner{
+   margin-top: 5px;
+   border-radius: 5px;
+   border: 1px solid rgba(0, 0, 0, 0.29);
+}
+table {
+    border: solid red;
+    width: 40%;
+    height: 20px;
+    border-collapse: collapse;
+    gap: 2%;
+}
+.barra{
+    margin-top: 10px;
+}
+}
