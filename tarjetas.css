@@ -1,0 +1,9 @@
+
+@media screen and (min-width:431px) {
+    .vista-derecha{
+        display: none;
+    }
+    .acordeon-targeta{
+        display: none;
+    }
+}
