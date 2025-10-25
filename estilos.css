@@ -6,6 +6,8 @@
 body {
   font-family: "Lato", sans-serif;
   color: rgba(53, 71, 172, 255);
+  font-family: "Lato", sans-serif;
+  color: rgba(53, 71, 172, 255);
 }
 
 .container {
@@ -14,9 +16,17 @@ body {
   gap: 18px;
   flex-direction: row-reverse;
   height: 100%;
+  margin-top: -1%;
+  display: flex;
+  gap: 18px;
+  flex-direction: row-reverse;
+  height: 100%;
 }
 
 .tarjetas:nth-child(1) {
+  width: 25%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   width: 25%;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
@@ -34,6 +44,11 @@ body {
   width: 60%;
   border-radius: 10px;
   background-color: rgba(250, 250, 250, 255);
+  height: auto;
+  flex-grow: 1;
+  width: 60%;
+  border-radius: 10px;
+  background-color: rgba(250, 250, 250, 255);
 }
 
 /* opciones usuario */
@@ -43,9 +58,20 @@ body {
   padding-top: 27px;
   text-align: center;
   justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  padding-top: 27px;
+  text-align: center;
+  justify-content: space-evenly;
 }
 
 .container-opciones-perfil-medio {
+  padding-top: 10%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding-top: 10%;
   display: flex;
   gap: 20px;
@@ -71,6 +97,9 @@ body {
   width: 80%;
   flex-grow: 1;
   color: rgb(255, 255, 255);
+  width: 80%;
+  flex-grow: 1;
+  color: rgb(255, 255, 255);
 }
 
 .opcion:nth-child(1) img,
@@ -78,17 +107,27 @@ body {
 .opcion:nth-child(3) img,
 .opcion:nth-child(4) img {
   filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 .iconoNav {
+  padding-right: 10px;
   padding-right: 10px;
 }
 
 #masOpciones {
   display: none;
+  display: none;
 }
 
 #imagenRostroPrueba {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  /* Hace que los bordes sean redondeados */
+  object-fit: cover;
+  /* Asegura que la imagen se ajuste al contenedor */
+  text-align: center;
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -102,9 +141,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: left;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .metas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -135,9 +184,17 @@ body {
   display: flex;
   gap: 2%;
   justify-content: space-evenly;
+  display: flex;
+  gap: 2%;
+  justify-content: space-evenly;
 }
 
 .analitica:nth-child(1) {
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 5%;
+  width: 93%;
+  height: 300px;
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   margin-top: 5%;
@@ -155,10 +212,20 @@ body {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   margin-top: 5%;
   height: 80px;
+  justify-self: center;
+  width: 93%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 5%;
+  height: 80px;
 }
 
 /* fuente */
 .barra {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 5px;
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -171,9 +238,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -187,9 +262,19 @@ body {
   margin-left: 1px;
   color: rgb(0, 0, 0);
   box-shadow: 1px 1px 3px 0px rgb(12, 12, 12);
+  border: solid 1px rgba(0, 0, 0, 0.381);
+  height: 20px;
+  border-radius: 8px;
+  transition: width 0.5s;
+  margin-left: 1px;
+  color: rgb(0, 0, 0);
+  box-shadow: 1px 1px 3px 0px rgb(12, 12, 12);
 }
 
 .label {
+  width: 70px;
+  text-align: right;
+  font-weight: bold;
   width: 70px;
   text-align: right;
   font-weight: bold;
@@ -199,13 +284,20 @@ body {
   margin-left: 10px;
   font-size: 14px;
   font-weight: bold;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .bar-inner.bar-small .value {
   color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
   font-family: "Lato", sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -215,9 +307,15 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-style: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -227,9 +325,15 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -239,9 +343,15 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 100;
   font-style: italic;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
 }
 
 .lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-style: italic;
@@ -251,15 +361,24 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: italic;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .lato-bold-italic {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: italic;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-style: italic;
@@ -276,6 +395,12 @@ body {
   color: #2d3a8c;
 }
 
+.cinzel-tipado {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 /* Botón nueva tarjeta */
 .nueva-tarjeta {
   display: flex;
@@ -284,14 +409,14 @@ body {
 
 .boton-targeta {
   background: #2d3a8c;
-  color: rgb(9, 9, 9);
+  color: rgb(246, 242, 242);
   border: none;
-  margin: 45px 0px 70px 10px;
+  margin: 45px 10px 70px 10px;
   padding: 5px 20px 0px 20px;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.6s;
+  transition: background 0.9s;
 }
 
 .nueva-tarjeta h3 {
@@ -327,18 +452,19 @@ body {
   justify-content: space-between;
   text-align: center;
   margin: 15px 0;
+   margin-right: 30px;
 }
 
 .targeta-info p {
   font-size: 12px;
   color: gray;
-  margin: 0;
-}
+  margin: 0;}
 
 .targeta-info span {
   font-size: 14px;
   font-weight: bold;
   color: #2d3a8c;
+ 
 }
 
 /* Quick Transfer */
@@ -435,7 +561,9 @@ body {
 }
 
 .estado {
-  background-color: rgb(62, 188, 37);
+  background-color: rgb(100, 248, 71);
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 @media screen and (max-width:1300px) {
@@ -516,11 +644,23 @@ body {
     height: auto;
     gap: 3px;
   }
+  .container {
+    display: flex;
+    margin-top: -5%;
+    height: auto;
+    gap: 3px;
+  }
 
   .divmenu {
     display: none;
   }
+  .divmenu {
+    display: none;
+  }
 
+  .tarjetas {
+    display: none;
+  }
   .tarjetas {
     display: none;
   }
@@ -535,7 +675,23 @@ body {
     border: none;
     border-radius: 8px;
   }
+  #masOpciones {
+    margin-top: 10px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    background-color: rgba(255, 255, 255, 0.518);
+    border: none;
+    border-radius: 8px;
+  }
 
+  #masOpciones img {
+    width: 25px;
+    border: none;
+    background-color: none;
+    filter: ;
+  }
   #masOpciones img {
     width: 25px;
     border: none;
@@ -566,7 +722,25 @@ body {
     width: 10px;
     height: 100%;
   }
+  .menu {
+    width: 10px;
+    height: 100%;
+  }
 
+  .meta:nth-child(1),
+  .meta:nth-child(2),
+  .meta:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    font-size: 10px;
+  }
   .meta:nth-child(1),
   .meta:nth-child(2),
   .meta:nth-child(3) {
@@ -586,7 +760,19 @@ body {
     width: 50px;
     height: 50px;
   }
+  .meta img {
+    width: 50px;
+    height: 50px;
+  }
 
+  .metas {
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+  }
   .metas {
     height: auto;
     margin-bottom: 10px;
