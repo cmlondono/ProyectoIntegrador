@@ -386,10 +386,10 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
+  
 }
 
 .iconoNav img {
-  width: 350px;
   height: 100px;
   border-radius: 50%;
 }
