@@ -1,356 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="vista-derecha">
-        <div class="nueva-tarjeta">
-          <h3>Tus targetas</h3>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-          <a href="ingresoTargeta.html"> 
-        <button class="boton-targeta"> Nueva tarjeta</button></a>
-        </div>
-        <div class="acordeon-targeta">
+
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="vista-derecha">
+      <div class="nueva-tarjeta">
+        <div class="acordeon-tarjeta">
           <select>
             <option>BBVA</option>
             <option>Bancolombia</option>
             <option>Caja social</option>
+            <option>Otros</option>
           </select>
         </div>
+        <a href="ingresoTargeta.html">
+          <button class="boton-targeta"> Nueva tarjeta</button></a>
+      </div>
+      <!-- imagen -->
+      <div class="tu-tarjeta">
+        <h3>Tu tarjeta</h3>
+        <br>
+        <div class="carrusel-targeta  ">
 
-        <!-- imagen -->
-        <div class="tu-targeta">
-          <h3>Tu tarjeta</h3>
-          <div class="foto-targeta">
-            <img src="Imagenes/targetaCredito.jpg" alt="" />
-          </div>
-          <div class="banco-targeta">
-            <div class="row cinzel-tipado">
-              <span>Banco:</span>
-              <span>Bancolombia</span>
-            </div>
-            <div class="row cinzel-tipado">
-              <span>Fecha:</span>
-              <span>Enero 2025</span>
-            </div>
-            <div class="row cinzel-tipado">
-              <span>Estado:</span>
-              <span class="estado">Activo</span>
-            </div>
-          </div>
-        </div>
-        <div class="iconoNav">
-          <img src="Imagenes/porcentajePrueba.jpg" alt="" />
-        </div>
-        <div class="targeta-info cinzel-tipado">
-          <div>
-            <p>Disponible</p>
-            <span>$4,350</span>
-          </div>
-          <div>
-            <p>Deuda</p>
-            <span>-$1,050</span>
-          </div>
-          <div>
-            <p>Limite</p>
-            <span>$15,000</span>
-          </div>
-        </div>
-        <!-- Transferencias-->
-        <div class="quick-transfer">
-          <h4>Transferencias a usuarios</h4>
-          <div class="avatares">
-            <img src="iconos/masIcono.png" alt="nuevo" />
-            <img src="iconos/personaIcono.png" alt="User" />
-            <img src="iconos/personaIcono.png" alt="User" />
-            <img src="iconos/personaIcono.png" alt="User" />
-          </div>
-        </div>
 
-        <!-- Tips -->
-        <div class="tips-card">
-          <h4>Tips</h4>
-          <p>
-            No gastes en cosas sin importancia que interfieran con tus planes.
-          </p>
-          <a href="#">Ver todos los tips</a>
         </div>
       </div>
 
-      <main class="contenedorMetas">
-        <!-- metas -->
-        <div class="metas">
-          <div class="meta">
-            <img
-              src="Imagenes/porcentajePrueba.jpg"
-              alt=""
-              height="100"
-              width="100"
-              style="padding: 10px"
-            />
-            <table>
-              <tr>
-                <td colspan="3">Viaje a Japón</td>
-              </tr>
-              <tr>
-                <td>Acumulado</td>
-                <td></td>
-                <td>Meta</td>
-              </tr>
-              <tr>
-                <td>$160.000</td>
-                <td></td>
-                <td>$8'000.000</td>
-              </tr>
-            </table>
+      <div>
+        <div class="banco-targeta">
+          <div class="row cinzel-tipado">
+            <span>Banco:</span>
+            <span>Bancolombia</span>
           </div>
-          <div class="meta">
-            <img
-              src="Imagenes/procentajePruebaDos.jpg"
-              alt=""
-              height="100"
-              width="100"
-              style="padding: 10px"
-            />
-            <table>
-              <tr>
-                <td colspan="3">Carro nuevo</td>
-              </tr>
-              <tr>
-                <td>Acumulado</td>
-                <td></td>
-                <td>Meta</td>
-              </tr>
-              <tr>
-                <td>$37'000.000</td>
-                <td></td>
-                <td>$100'000.000</td>
-              </tr>
-            </table>
+          <div class="row cinzel-tipado">
+            <span>Fecha:</span>
+            <span>Enero 2025</span>
           </div>
-          <div class="meta">
-            <img
-              src="Imagenes/porcentajePruebaTres.jpg"
-              alt=""
-              height="100"
-              width="100"
-              style="padding: 10px"
-            />
-            <table>
-              <tr>
-                <td colspan="3">Casa</td>
-              </tr>
-              <tr>
-                <td>Acumulado</td>
-                <td></td>
-                <td>Meta</td>
-              </tr>
-              <tr>
-                <td>$365'000.000</td>
-                <td></td>
-                <td>$500'000.000</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-
-        <div class="vista-previa">
-          <div class="analitica">
-            <h3 style="text-align: center; margin-top: 15px">
-              Analítica de Metas
-            </h3>
-            <div class="bar-chart">
-              <div class="bar">
-                <span class="label">Viaje a Japón</span>
-                <div class="barra">
-                  <div
-                    class="bar-inner bar-small"
-                    style="width: 2%; background: #000000"
-                  >
-                    <span
-                      style="color: #000000; margin-left: 25px"
-                      class="value"
-                      >2%</span
-                    >
-                  </div>
-                  <div
-                    class="bar-inner"
-                    style="width: 98%; background: #fb9212"
-                  >
-                    <span class="value">98%</span>
-                  </div>
-                </div>
-              </div>
-              <div class="bar">
-                <span class="label">Carro nuevo</span>
-                <div class="barra">
-                  <div
-                    class="bar-inner bar-small"
-                    style="width: 37%; background: #000000"
-                  >
-                    <span class="value color2">37%</span>
-                  </div>
-                  <div
-                    class="bar-inner"
-                    style="width: 63%; background: #fb9212"
-                  >
-                    <span class="value">63%</span>
-                  </div>
-                </div>
-              </div>
-              <div class="bar">
-                <span class="label">Casa</span>
-                <div class="barra">
-                  <div
-                    class="bar-inner bar-small"
-                    style="width: 73%; background: #000000"
-                  >
-                    <span class="value color2">73%</span>
-                  </div>
-                  <div
-                    class="bar-inner"
-                    style="width: 27%; background: #fb9212"
-                  >
-                    <span class="value">27%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="transacciones">
-          <div class="transaccion">
-            <img src="iconos/cargarIcono.png" alt="" />
-            <span>Ingreso: $250.000 para el Viaje a Japón</span>
-          </div>
-          <div class="transaccion">
-            <img src="iconos/descargaIcono.png" alt="" />
-            <span>Egreso: $100.000 pago mensualidad gimnasio</span>
-          </div>
-        </div>
-      </main>
-      <div id="barraleft">
-        <div class="containerOpciones">
-          <div class="masOpciones1">
-            <button id="masOpciones">
-              <img src="iconos/editar-usuario.png" alt="" />
-            </button>
-
-            <a href="tarjetas.html">
-              <button id="masOpciones">
-                <img src="iconos/agregar-tarjeta.png" alt="" /></button
-            ></a>
-
-            <button id="masOpciones">
-              <img src="iconos/dashBoardIcono.png" alt="" />
-            </button>
-
-            <button id="masOpciones">
-              <a href="analicis.html"
-                ><img src="iconos/analiticaIcono.png" alt=""
-              /></a>
-            </button>
-
-            <button id="masOpciones">
-              <img src="iconos/notasIcono.png" alt="" />
-            </button>
-          </div>
-
-          <div class="masOpciones2">
-            <button id="masOpciones">
-              <a href="login.html"
-                ><img src="iconos/salidaIcono.png" alt=""
-              /></a>
-            </button>
-
-            <button id="masOpciones">
-              <img src="iconos/ajustesIcono.png" alt="" />
-            </button>
+          <div class="row cinzel-tipado">
+            <span>Estado:</span>
+            <span class="estado">Activo</span>
           </div>
         </div>
       </div>
-      <!-- Opciones Menu -->
-      <div class="divmenu">
-        <nav class="navmenu" style="background-color: rgba(53, 71, 172, 255)">
-          <div class="logo-usuario">
-            <img
-              src="Imagenes/imagenRostroPrueba.jpg"
-              alt=""
-              id="imagenRostroPrueba"
-              style="text-align: center"
-            />
-          </div>
 
-          <h2 style="text-align: center; color: white" class="">
-            Nombre ejemplo
-          </h2>
-          <div class="container-opciones-perfil-medio">
-            <div class="opcion">
-              <img src="iconos/dashBoardIcono.png" alt="" class="iconoNav" />
-              <span>Dashboard</span>
-            </div>
-            <div class="opcion">
-              <img src="iconos/perfileIcono.png" alt="" class="iconoNav" />
-              <span>Perfil</span>
-            </div>
-            <div class="opcion">
-              <a
-                style="text-decoration: none; color: white"
-                href="analicis.html"
-                ><img src="iconos/analiticaIcono.png" alt="" class="iconoNav"
-              /></a>
-              <a
-                style="text-decoration: none; color: white"
-                href="analicis.html"
-                ><span>Estadisticas</span></a
-              >
-            </div>
-            <div class="opcion">
-              <img src="iconos/notasIcono.png" alt="" class="iconoNav" />
-              <span>Notas</span>
-            </div>
-          </div>
+      <div class="iconoNav">
+        <img src="Imagenes/porcentajePrueba.jpg" alt="" />
+      </div>
+      <div class="targeta-info cinzel-tipado">
+        <div>
+          <p>Disponible</p>
+          <span>$4,350</span>
+        </div>
+        <div>
+          <p>Deuda</p>
+          <span>-$1,050</span>
+        </div>
+        <div>
+          <p>Limite</p>
+          <span>$15,000</span>
+        </div>
+      </div>
+      <!-- Transferencias-->
+      <div class="quick-transfer">
+        <h4>Transferencias a usuarios</h4>
+        <div class="avatares">
+          <img src="iconos/masIcono.png" alt="nuevo" />
+          <img src="iconos/personaIcono.png" alt="User" />
+          <img src="iconos/personaIcono.png" alt="User" />
+          <img src="iconos/personaIcono.png" alt="User" />
+        </div>
+      </div>
 
-          <div class="container-opciones-perfil-inferior">
-            <div class="opcion">
-              <span
-                ><img
-                  src="iconos/ajustesIcono.png"
-                  alt=""
-                  class="iconoNav"
-                />Ajustes</span
-              >
-            </div>
-            <div class="opcion">
-              <img src="iconos/salidaIcono.png" alt="" class="iconoNav" />
-              <span
-                ><a
-                  href="login.html"
-                  style="color: white; text-decoration: none"
-                  >Salir</a
-                ></span
-              >
-            </div>
-          </div>
-        </nav>
+      <!-- Tips -->
+      <div class="tips-card">
+        <h4>Tips</h4>
+        <p>
+          No gastes en cosas sin importancia que interfieran con tus planes.
+        </p>
+        <a href="#">Ver todos los tips</a>
       </div>
     </div>
-  </body>
+
+    <main class="contenedorMetas">
+      <!-- metas -->
+      <div class="metas">
+        <div class="meta">
+          <img src="Imagenes/porcentajePrueba.jpg" alt="" height="100" width="100" style="padding: 10px" />
+          <table>
+            <tr>
+              <td colspan="3">Viaje a Japón</td>
+            </tr>
+            <tr>
+              <td>Acumulado</td>
+              <td></td>
+              <td>Meta</td>
+            </tr>
+            <tr>
+              <td>$160.000</td>
+              <td></td>
+              <td>$8'000.000</td>
+            </tr>
+          </table>
+        </div>
+        <div class="meta">
+          <img src="Imagenes/procentajePruebaDos.jpg" alt="" height="100" width="100" style="padding: 10px" />
+          <table>
+            <tr>
+              <td colspan="3">Carro nuevo</td>
+            </tr>
+            <tr>
+              <td>Acumulado</td>
+              <td></td>
+              <td>Meta</td>
+            </tr>
+            <tr>
+              <td>$37'000.000</td>
+              <td></td>
+              <td>$100'000.000</td>
+            </tr>
+          </table>
+        </div>
+        <div class="meta">
+          <img src="Imagenes/porcentajePruebaTres.jpg" alt="" height="100" width="100" style="padding: 10px" />
+          <table>
+            <tr>
+              <td colspan="3">Casa</td>
+            </tr>
+            <tr>
+              <td>Acumulado</td>
+              <td></td>
+              <td>Meta</td>
+            </tr>
+            <tr>
+              <td>$365'000.000</td>
+              <td></td>
+              <td>$500'000.000</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="vista-previa">
+        <div class="analitica">
+          <h3 style="text-align: center; margin-top: 15px">
+            Analítica de Metas
+          </h3>
+          <div class="bar-chart">
+            <div class="bar">
+              <span class="label">Viaje a Japón</span>
+              <div class="barra">
+                <div class="bar-inner bar-small" style="width: 2%; background: #000000">
+                  <span style="color: #000000; margin-left: 25px" class="value">2%</span>
+                </div>
+                <div class="bar-inner" style="width: 98%; background: #fb9212">
+                  <span class="value">98%</span>
+                </div>
+              </div>
+            </div>
+            <div class="bar">
+              <span class="label">Carro nuevo</span>
+              <div class="barra">
+                <div class="bar-inner bar-small" style="width: 37%; background: #000000">
+                  <span class="value color2">37%</span>
+                </div>
+                <div class="bar-inner" style="width: 63%; background: #fb9212">
+                  <span class="value">63%</span>
+                </div>
+              </div>
+            </div>
+            <div class="bar">
+              <span class="label">Casa</span>
+              <div class="barra">
+                <div class="bar-inner bar-small" style="width: 73%; background: #000000">
+                  <span class="value color2">73%</span>
+                </div>
+                <div class="bar-inner" style="width: 27%; background: #fb9212">
+                  <span class="value">27%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="transacciones">
+        <div class="transaccion">
+          <img src="iconos/cargarIcono.png" alt="" />
+          <span>Ingreso: $250.000 para el Viaje a Japón</span>
+        </div>
+        <div class="transaccion">
+          <img src="iconos/descargaIcono.png" alt="" />
+          <span>Egreso: $100.000 pago mensualidad gimnasio</span>
+        </div>
+      </div>
+    </main>
+    <div id="barraleft">
+      <div class="containerOpciones">
+        <div class="masOpciones1">
+          <button id="masOpciones">
+            <img src="iconos/editar-usuario.png" alt="" />
+          </button>
+
+          <a href="tarjetas.html">
+            <button id="masOpciones">
+              <img src="iconos/agregar-tarjeta.png" alt="" /></button></a>
+
+          <button id="masOpciones">
+            <img src="iconos/dashBoardIcono.png" alt="" />
+          </button>
+
+          <button id="masOpciones">
+            <a href="analicis.html"><img src="iconos/analiticaIcono.png" alt="" /></a>
+          </button>
+
+          <button id="masOpciones">
+            <img src="iconos/notasIcono.png" alt="" />
+          </button>
+        </div>
+
+        <div class="masOpciones2">
+          <button id="masOpciones">
+            <a href="login.html"><img src="iconos/salidaIcono.png" alt="" /></a>
+          </button>
+
+          <button id="masOpciones">
+            <img src="iconos/ajustesIcono.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Opciones Menu -->
+    <div class="divmenu">
+      <nav class="navmenu" style="background-color: rgba(53, 71, 172, 255)">
+        <div class="logo-usuario">
+          <img src="Imagenes/imagenRostroPrueba.jpg" alt="" id="imagenRostroPrueba" style="text-align: center" />
+        </div>
+
+        <h2 style="text-align: center; color: white" class="">
+          Nombre ejemplo
+        </h2>
+        <div class="container-opciones-perfil-medio">
+          <div class="opcion">
+            <img src="iconos/dashBoardIcono.png" alt="" class="iconoNav" />
+            <span>Dashboard</span>
+          </div>
+          <div class="opcion">
+            <img src="iconos/perfileIcono.png" alt="" class="iconoNav" />
+            <span>Perfil</span>
+          </div>
+          <div class="opcion">
+            <a style="text-decoration: none; color: white" href="analicis.html"><img src="iconos/analiticaIcono.png"
+                alt="" class="iconoNav" /></a>
+            <a style="text-decoration: none; color: white" href="analicis.html"><span>Estadisticas</span></a>
+          </div>
+          <div class="opcion">
+            <img src="iconos/notasIcono.png" alt="" class="iconoNav" />
+            <span>Notas</span>
+          </div>
+        </div>
+
+        <div class="container-opciones-perfil-inferior">
+          <div class="opcion">
+            <span><img src="iconos/ajustesIcono.png" alt="" class="iconoNavñ" />Ajustes</span>
+          </div>
+          <div class="opcion">
+            <img src="iconos/salidaIcono.png" alt="" class="iconoNav" />
+            <span><a href="login.html" style="color: white; text-decoration: none">Salir</a></span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+<script src="carrusel.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
