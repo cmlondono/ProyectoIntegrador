@@ -6,12 +6,15 @@
 }
 
 body {
+  width: 100% !important;
   font-family: "Lato", sans-serif !important;
   color: rgba(53, 71, 172, 255)!important;
   
 }
 
 .contenedor {
+  
+  width: 100% !important;
   margin-top: -1%;
   display: flex;
   gap: 18px;
@@ -43,14 +46,11 @@ body {
 .contenedorMetas {
   height: auto;
   flex-grow: 1;
-  width: 60%;
+  width: 85% !important;
+  mar
   border-radius: 10px;
   background-color: rgba(250, 250, 250, 255);
-  height: auto;
-  flex-grow: 1;
-  width: 60%;
-  border-radius: 10px;
-  background-color: rgba(250, 250, 250, 255);
+ 
 }
 
 /* opciones usuario */
@@ -60,11 +60,7 @@ body {
   padding-top: 27px;
   text-align: center;
   justify-content: space-evenly;
-  width: 100%;
-  display: flex;
-  padding-top: 27px;
-  text-align: center;
-  justify-content: space-evenly;
+
 }
 
 .container-opciones-perfil-medio {
@@ -98,9 +94,6 @@ body {
   width: 80%;
   flex-grow: 1;
   color: rgb(255, 255, 255);
-  width: 80%;
-  flex-grow: 1;
-  color: rgb(255, 255, 255);
 }
 
 .opcion:nth-child(1) img,
@@ -115,7 +108,7 @@ body {
 
 #masOpciones {
   display: none;
-  display: none;
+  
 }
 
 #imagenRostroPrueba {
@@ -126,13 +119,7 @@ body {
   object-fit: cover;
   /* Asegura que la imagen se ajuste al contenedor */
   text-align: center;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  /* Hace que los bordes sean redondeados */
-  object-fit: cover;
-  /* Asegura que la imagen se ajuste al contenedor */
-  text-align: center;
+  
 }
 
 .opcion {
@@ -145,29 +132,24 @@ body {
 }
 
 .metas {
-  width: 100%;
+  width: 85% !important;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2%;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2%;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+ 
 }
 
 .meta:nth-child(1),
 .meta:nth-child(2),
 .meta:nth-child(3) {
+  
   border-radius: 20px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   margin-top: 5%;
-  width: 28%;
+  width: 100% !important;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -182,40 +164,32 @@ body {
   display: flex;
   gap: 2%;
   justify-content: space-evenly;
-  display: flex;
-  gap: 2%;
-  justify-content: space-evenly;
+  width: 84% !important;
 }
 
 .analitica:nth-child(1) {
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   margin-top: 5%;
-  width: 93%;
+  width: 100% !important;
   height: 300px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-  margin-top: 5%;
-  width: 93%;
-  height: 300px;
+ 
+}
+.transaccion{
+  width: 85% !important;
 }
 
 /*Transacciones*/
 .transaccion:nth-child(1),
 .transaccion:nth-child(2),
 .transaccion:nth-child(3) {
-  justify-self: center;
-  width: 93%;
+
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   margin-top: 5%;
   height: 80px;
-  justify-self: center;
-  width: 93%;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-  margin-top: 5%;
-  height: 80px;
+  
 }
 
 /* fuente */
@@ -590,7 +564,7 @@ body {
   border-radius: 20px !important;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3) !important;
   margin-top: 5% !important;
-  width: 93% !important;
+  width: 100% !important;
   height: auto !important;
   display: flex !important;
   flex-direction: column !important;
@@ -604,10 +578,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 230px;
-  margin-left: auto;
+  width: auto;
+  margin-left: 2px;
+  margin-right: 8px;
   font-family: Arial, sans-serif;
   color: #2d3a8c;
+  margin-top: -3%;
 }
 .boton-targeta {
   background: #2d3a8c;
