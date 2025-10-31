@@ -27,7 +27,7 @@
       <img src="Imagenes/tarjeta-exito-basica_1.png" class="d-block w-100" alt="..." style="height:100%; object-fit:cover;">
     </div>
     <div class="carousel-item">
-      <img src="Imagenes/Tarjeta-coral.PNG" class="d-block w-100" alt="..." style="height:100%; object-fit:cover;">
+      <img src="Imagenes/Tarjeta-coral.PNG" class="d-block w-100 h-100" alt="..." style="height:100%; object-fit:cover;">
     </div>
   </div>
 

@@ -12,90 +12,133 @@
         rel="stylesheet">
     <link rel="stylesheet" href="estilosBoot.css">
     <link rel="stylesheet" href="tarjetas.css">
+    
 
 </head>
 
 <body>
- 
-       
-              <button><a href="index.html"><img id="flecha" src="iconos/volver-flecha.png" alt=""></a></button>
-       
+
+
+   <div id="contflecha">
+
+       <button><a href="index.html"><img id="flecha" src="iconos/volver-flecha.png" alt=""></a></button>
+   </div> 
+
     <div class="vista-derecha">
 
-        <div class="nueva-tarjeta">
-
-            <h3>Tus targetas</h3>
-
-
-            <button class="boton-targeta">+ Nueva tarjeta</button>
-        </div>
-        <div class="acordeon-targeta">
-            <select>
-                <option>BBVA</option>
-                <option>Bancolombia</option>
-                <option>Caja social</option>
-            </select>
-        </div>
-
-        <!-- imagen -->
-        <div class="tu-targeta">
-            <h3>Tu tarjeta</h3>
-            <div class="foto-targeta">
-                <img src="Imagenes/targetaCredito.jpg" alt="" />
+        <div class="vista-derecha">
+            <div class="nueva-tarjeta">
+                <div class="acordeon-tarjeta">
+                    <select>
+                        <option>BBVA</option>
+                        <option>Bancolombia</option>
+                        <option>Caja social</option>
+                        <option>Otros</option>
+                    </select>
+                </div>
+                <a href="ingresoTargeta.html">
+                    <button class="boton-targeta"> Nueva tarjeta</button></a>
             </div>
-            <div class="banco-targeta">
-                <div class="row">
-                    <span>Banco:</span>
-                    <span>Bancolombia</span>
-                </div>
-                <div class="row">
-                    <span>Fecha:</span>
-                    <span>Enero 2025</span>
-                </div>
-                <div class="row">
-                    <span>Estado:</span>
-                    <span class="estado">Activo</span>
+            <!-- imagen -->
+            <div class="tu-tarjeta">
+                <h3>Tu tarjeta</h3>
+                <br>
+                <div class="carrusel-targeta  ">
+
+
                 </div>
             </div>
-        </div>
-        <div class="iconoNav">
-            <img src="Imagenes/porcentajePrueba.jpg" alt="" style="width: 50%;" />
-        </div>
-        <div class="targeta-info">
-            <div>
-                <p>Disponible</p>
-                <span>$4,350</span>
-            </div>
-            <div>
-                <p>Deuda</p>
-                <span>-$1,050</span>
-            </div>
-            <div>
-                <p>Limite</p>
-                <span>$15,000</span>
-            </div>
-        </div>
-        <!-- Transferencias-->
-        <div class="quick-transfer">
-            <h4>Transferencias a usuarios</h4>
-            <div class="avatares">
-                <img src="iconos/masIcono.png" alt="nuevo" />
-                <img src="iconos/personaIcono.png" alt="User" />
-                <img src="iconos/personaIcono.png" alt="User" />
-                <img src="iconos/personaIcono.png" alt="User" />
-            </div>
-        </div>
 
-        <!-- Tips -->
-        <div class="tips-card">
-            <h4>Tips</h4>
-            <p>
-                No gastes en cosas sin importancia que interfieran con tus planes.
-            </p>
-            <a href="#">Ver todos los tips</a>
+            <div>
+                <div class="banco-targeta">
+                    <div class="row cinzel-tipado">
+                        <span>Banco:</span>
+                        <span>Bancolombia</span>
+                    </div>
+                    <div class="row cinzel-tipado">
+                        <span>Fecha:</span>
+                        <span>Enero 2025</span>
+                    </div>
+                    <div class="row cinzel-tipado">
+                        <span>Estado:</span>
+                        <span class="estado">Activo</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="iconoNav">
+                <img src="Imagenes/porcentajePrueba.jpg" alt="" />
+            </div>
+            <div class="targeta-info cinzel-tipado">
+                <div>
+                    <p>Disponible</p>
+                    <span>$4,350</span>
+                </div>
+                <div>
+                    <p>Deuda</p>
+                    <span>-$1,050</span>
+                </div>
+                <div>
+                    <p>Limite</p>
+                    <span>$15,000</span>
+                </div>
+            </div>
+            <!-- Transferencias-->
+            <div class="quick-transfer">
+                <h4>Transferencias a usuarios</h4>
+                <div class="avatares">
+                    <img src="iconos/masIcono.png" alt="nuevo" />
+                    <img src="iconos/personaIcono.png" alt="User" />
+                    <img src="iconos/personaIcono.png" alt="User" />
+                    <img src="iconos/personaIcono.png" alt="User" />
+                </div>
+            </div>
+
+            <!-- Tips -->
+            <div class="tips-card">
+                <h4>Tips</h4>
+                <p>
+                    No gastes en cosas sin importancia que interfieran con tus planes.
+                </p>
+                <a href="#">Ver todos los tips</a>
+            </div>
         </div>
     </div>
 
+    <div class="card-form">
+
+        <h2>💳 Ingreso de Tarjeta</h2>
+        <form>
+            <label for="nombre">Nombre en la tarjeta</label>
+            <input type="text" id="nombre" placeholder="Ej: Alexis Correa" required />
+
+            <label for="numero">Número de tarjeta</label>
+            <input type="text" id="numero" maxlength="16" placeholder="1234 5678 9012 3456" required />
+
+            <div class="flex-row">
+                <div>
+                    <label for="fecha">Fecha de expiración</label>
+                    <input type="date" id="fecha" maxlength="5" placeholder="MM/AA" required />
+                </div>
+                <div>
+                    <label for="cvv">CVV</label>
+                    <input type="password" id="cvv" maxlength="3" placeholder="123" required />
+                </div>
+            </div>
+
+            <button type="submit">Guardar Tarjeta</button>
+        </form>
+    </div>
+
+
+    <script src="carrusel.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -6,57 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="analicis.css">
+    <link rel="stylesheet" href="estilos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilosBoot.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-    <button><a href="index.html"><img id="flecha" src="iconos/volver-flecha.png" alt=""></a></button>
+    <main>
+        <div class="contenedor ">
 
-    <div class="vista-previa">
-<h3 style="text-align:center; margin-top: 15px;">Analítica de Metas</h3>
-        <div class="analitica">
-
-            <div class="barra">
-                <span id="label">Viaje a Japón</span>
-                <div class="barra">
-                    <div class="bar-inner bar-small" style="width: 2%; background:#000000;">
-                        <span style="color: #000000; margin-left: 10px;" class="value ">2%</span>
+            <div class="divmenu "></div>
+            <div class="vista-previa ">
+                <div class="boton-Volver ">
+                    <button><a  href="index.html"><img id="flecha" src="iconos/volver-flecha.png" alt=""></a></button>
+                </div>
+            </div>
+            <div class="analitica-contenedor d-flex flex-row gap-0">
+                <div class="analitica-metas">
+                    <h2>Analítica de Metas</h2>
+                    <div class="d-flex gap-5 m-5">
+                        <div class="torta"></div>
+                        <div class="leyenda w-75">
+                            <div class="item"><span class="color" style="background:#f68b1f;"></span> Viaje a Japón — 98%</div>
+                            <div class="item"><span class="color" style="background:#000;"></span> Carro nuevo — 63%</div>
+                            <div class="item"><span class="color" style="background:#1e2a8a;"></span> Casa — 27%</div>
+                        </div>
                     </div>
-
-                    <div class="bar-inner" style="width: 98%; background:#fb9212;"><span class="value">98%</span>
+                </div>
+                <div class="analitica-metas">
+                    <h2>Analítica de Metas</h2>
+                    <div class="d-flex gap-5 m-5">
+                        <div class="torta"></div>
+                        <div class="leyenda w-75">
+                            <div class="item"><span class="color" style="background:#f68b1f;"></span> Viaje a Japón — 98%</div>
+                            <div class="item"><span class="color" style="background:#000;"></span> Carro nuevo — 63%</div>
+                            <div class="item"><span class="color" style="background:#1e2a8a;"></span> Casa — 27%</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </main>
 
-        <div class="analitica">
-            <div class="barra">
-                <span id="label">Carro nuevo</span>
-                <div class="barra">
-                    <div class="bar-inner bar-small" style="width: 37%; background:#000000;color: white;">
-                        <span class="value color2">37%</span>
-                    </div>
-                    <div class="bar-inner" style="width: 63%; background:#fb9212;">
-                        <span class="value">63%</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="analitica">
-            <div class="barra">
-                <span id="label">Casa</span>
-                <div class="barra">
-                    <div class="bar-inner bar-small" style="width: 73%; background:#000000; color: white;">
-                        <span class="value color2">73%</span>
-                    </div>
-                    <div class="bar-inner" style="width: 27%; background:#fb9212;">
-                        <span class="value">27%</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
+    <script src="navBar.js"></script>
 </body>
 
 </html>
