@@ -12,7 +12,7 @@ navBar.innerHTML=`
         <div class="container-opciones-perfil-medio">
           <div class="opcion">
             <img src="iconos/dashBoardIcono.png" alt="" class="iconoNav" />
-            <span>Dashboard</span>
+            <a style="text-decoration: none; color: white" href="index.html"><span>DashBoard</span></a>
           </div>
           <div class="opcion">
             <img src="iconos/perfileIcono.png" alt="" class="iconoNav" />
@@ -25,7 +25,7 @@ navBar.innerHTML=`
           </div>
           <div class="opcion">
             <img src="iconos/notasIcono.png" alt="" class="iconoNav" />
-            <span>Notas</span>
+            <a style="text-decoration: none; color: white" href="notas.html"><span>notas</span></a>
           </div>
         </div>
 
