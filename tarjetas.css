@@ -1,105 +1,108 @@
- 
+ @media screen and (min-width:1000px) {
+     #contenedorPrincipal {
+         display: none;
+     }
 
-@media screen and (min-width:1000px) {
-    .vista-derecha {
-        display: none;
+     .container {
+         display: none;
+     }
 
-    }
+     .vista-derecha {
+         display: none;
+     }
 
-    * {
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-    }
+     .contenedorOpciones {
+         display: none;
+     }
 
-    body {
-        background: linear-gradient(135deg, #f2a4a4, #0a0ad4);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    #flecha {
-        width: 30px;
-        height: 30px;
-        background-color: none;
-        border: none;
-        margin-left: 5px;
-    }
+     * {
+         box-sizing: border-box;
+         font-family: "Poppins", sans-serif;
+     }
+
+     body {
+         background: linear-gradient(135deg, #f2a4a4, #0a0ad4);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+     }
+
      a {
 
-        background-color: none;
-    }
+         background-color: none;
+     }
 
-    button {
-        background-color: transparent;
-        border-radius: 12px;
-        border: solid transparent;
-    }
+     button {
+         background-color: transparent;
+         border-radius: 12px;
+         border: solid transparent;
+     }
 
-   #contflecha{
-    margin-right: 600px;
-    margin-bottom: 1000px;
-    margin-right: 40px;
-   }
+     #contflecha {
+         margin-right: 600px;
+         margin-bottom: 1000px;
+         margin-right: 40px;
+     }
 
-    .card-form {
-        background: #fff;
-        padding: 25px;
-        border-radius: 15px;
-        width: 320px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    }
+     .card-form {
+         background: #fff;
+         padding: 25px;
+         border-radius: 15px;
+         width: 320px;
+         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+     }
 
-    h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        color: #333;
-    }
+     h2 {
+         text-align: center;
+         margin-bottom: 20px;
+         color: #333;
+     }
 
-    label {
-        font-weight: 600;
-        font-size: 14px;
-        color: #444;
-    }
+     label {
+         font-weight: 600;
+         font-size: 14px;
+         color: #444;
+     }
 
-    input {
-        width: 100%;
-        padding: 10px;
-        margin-top: 5px;
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        font-size: 15px;
-    }
+     input {
+         width: 100%;
+         padding: 10px;
+         margin-top: 5px;
+         margin-bottom: 15px;
+         border: 1px solid #ccc;
+         border-radius: 8px;
+         font-size: 15px;
+     }
 
-    input:focus {
-        outline: none;
-        border-color: #4e54c8;
-        box-shadow: 0 0 4px #4e54c8;
-    }
+     input:focus {
+         outline: none;
+         border-color: #4e54c8;
+         box-shadow: 0 0 4px #4e54c8;
+     }
 
-    .flex-row {
-        display: flex;
-        gap: 10px;
-    }
+     .flex-row {
+         display: flex;
+         gap: 10px;
+     }
 
-    button {
-        width: 100%;
-        background: #4e54c8;
-        color: white;
-        padding: 12px;
-        border: none;
-        border-radius: 10px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
+     button {
+         width: 100%;
+         background: #4e54c8;
+         color: white;
+         padding: 12px;
+         border: none;
+         border-radius: 10px;
+         font-size: 16px;
+         cursor: pointer;
+         transition: 0.3s;
+     }
 
-    button:hover {
-        background: #171717;
-    }
+     button:hover {
+         background: #171717;
+     }
 
-    /* #flecha {
+     /* #flecha {
   width: 30px;
   height: 30px;
   background-color: none;
@@ -107,36 +110,315 @@
   margin: 0px 0px 10px 5px;
 } */
 
-}
+ }
 
-@media screen and (max-width:1000px) {
-    .card-form {
-        display: none;
-    }
+ @media screen and (max-width:1000px) {
+     .card-form {
+         display: none;
+     }
 
-    .acordeon-targeta {
-        display: none;
-    }
+     .logoFooter img {
+         border-radius: 50px !important;
+         width: 40px;
 
-    body {
-        background-color: transparent;
-        color: rgb(255, 255, 255);
+     }
 
-    }
+     .fs-5 {
+         font-size: 18px;
+         color: #0a0ad4;
+     }
 
-    .oleo-script-regular {
-        font-family: "Oleo Script", system-ui;
-        font-weight: 400;
-        font-style: normal;
-    }
+     .contenedorOpciones {
+         display: flex;
+         height: 50px;
+         width: 97%;
 
-    .oleo-script-bold {
-        font-family: "Oleo Script", system-ui;
-        font-weight: 700;
-        font-style: normal;
-        margin-top: 20%;
+     }
 
-    }
+     .info-tarjeta {
+         color: #0a0ad4;
+     }
+
+     #contflecha img {
+         height: 25px;
+         width: auto;
+         border: transparent;
+     }
+
+     #contflecha button {
+         border: none;
+     }
+
+     #contflecha {
+         display: flex;
+         margin-left: 2px;
+         margin-top: 2px;
+         width: 80%;
+         height: 40px;
+     }
+
+     .carrusel-targeta {
+
+         background-color: #ffffff;
+         border-radius: 21px !important;
+         border: solid rgba(197, 47, 47, 0.231);
+         width: 500px;
+         height: 335px;
+         padding-top: 20px;
+         padding-left: 20px;
+         padding-right: 20px;
+         margin-top: -20px;
+         margin-left: auto;
+         margin-right: auto;
+         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+     }
+
+     .vista-derecha {
+         width: 100%;
+         padding: 0% 25%;
+
+     }
+
+     .vista-derecha h3 {
+         margin-top: 50px;
+         margin-bottom: 10px;
+         text-align: left;
+         color: #0a0ad4;
+     }
+
+     .acordeon-targeta {
+         display: flex;
+         width: 100%;
+         margin-left: 80px;
+
+         margin-bottom: 10px;
+     }
 
 
-}
+     .boton-targeta {
+         background-color: #0a0ad4;
+         width: 150px;
+         height: 25px;
+         color: white;
+         font-size: 14px;
+         font-weight: bold;
+         border-radius: 8px;
+         border: none;
+         cursor: pointer;
+         transition: background-color 0.3s;
+
+         &:hover {
+             background-color: #ef9b1d;
+             text-align: center;
+
+
+         }
+
+         .boton-targeta a {
+             padding-left: 20px;
+         }
+     }
+
+     .nueva-tarjeta {
+         display: flex;
+         width: 100% !important;
+         justify-content: end;
+         gap: 10px;
+         padding-right: 20px;
+         padding-top: 20px;
+     }
+
+     .nueva-tarjeta select {
+         display: flex;
+         width: 100%;
+         justify-content: end;
+         border-radius: 8px;
+         background-color: #0a0ad4;
+         color: white;
+         font-weight: bold;
+         border: none;
+         cursor: pointer;
+         transition: background-color 0.3s;
+         height: 25px;
+
+         &:hover {
+             background-color: #ef9b1d;
+             text-align: center;
+             border: solid 1px #0a0ad4;
+
+         }
+        
+        
+
+         /*   .nueva-tarjeta select option:hover {
+             background-color: #0a0ad4;
+                color: #ffffff;
+            } */
+         .oleo-script-regular {
+             font-family: "Oleo Script", system-ui;
+             font-weight: 400;
+             font-style: normal;
+         }
+
+         .oleo-script-bold {
+             font-family: "Oleo Script", system-ui;
+             font-weight: 700;
+             font-style: normal;
+             margin-top: 20%;
+
+         }
+
+
+     }
+ }
+
+ @media screen and (max-width:704px) {
+     body {
+         width: 50%;
+     }
+
+     .card-form {
+         display: none;
+     }
+
+     .contenedorOpciones {
+         display: flex;
+         height: 50px;
+         width: 560px;
+
+     }
+
+     .info-tarjeta {
+         color: #0a0ad4;
+     }
+
+     #contflecha img {
+         height: 25px;
+         width: auto;
+         border: transparent;
+     }
+
+     #contflecha button {
+         border: none;
+     }
+
+     #contflecha {
+         display: flex;
+         margin-left: 2px;
+         margin-top: 2px;
+         width: 80%;
+         height: 40px;
+     }
+
+     .carrusel-targeta {
+
+         background-color: #ffffff;
+         border-radius: 21px !important;
+         border: solid rgba(197, 47, 47, 0.231);
+         width: 500px;
+         height: 335px;
+         padding-top: 20px;
+         padding-left: 20px;
+         padding-right: 20px;
+         margin-top: -20px;
+         margin-left: auto;
+         margin-right: auto;
+         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+     }
+
+     .vista-derecha {
+         width: 100%;
+         padding: 0% 12%;
+
+     }
+
+     .vista-derecha h3 {
+         margin-top: 50px;
+         margin-bottom: 10px;
+         text-align: left;
+         color: #0a0ad4;
+     }
+
+     .acordeon-targeta {
+         display: flex;
+         width: 100%;
+         margin-left: 80px;
+
+         margin-bottom: 10px;
+     }
+
+
+     .boton-targeta {
+         background-color: #0a0ad4;
+         width: 90px;
+         height: 25px;
+         color: white;
+         font-size: 12px;
+         font-weight: bold;
+         border-radius: 8px;
+         border: none;
+         cursor: pointer;
+         transition: background-color 0.3s;
+
+         &:hover {
+             background-color: #ef9b1d;
+             text-align: center;
+
+
+         }
+
+         .boton-targeta a {
+             padding-left: 20px;
+         }
+     }
+
+     .nueva-tarjeta {
+         display: flex;
+         width: 50% !important;
+         justify-content: end;
+         gap: 10px;
+         padding-right: 20px;
+         padding-top: 20px;
+     }
+
+     .nueva-tarjeta select {
+         display: flex;
+         width: 90px;
+         justify-content: end;
+         border-radius: 8px;
+         background-color: #0a0ad4;
+         color: white;
+         font-weight: bold;
+         border: none;
+         cursor: pointer;
+         transition: background-color 0.3s;
+         height: 25px;
+
+         &:hover {
+             background-color: #ef9b1d;
+             text-align: center;
+             border: solid 1px #0a0ad4;
+
+         }
+
+         /*   .nueva-tarjeta select option:hover {
+             background-color: #0a0ad4;
+                color: #ffffff;
+            } */
+         .oleo-script-regular {
+             font-family: "Oleo Script", system-ui;
+             font-weight: 400;
+             font-style: normal;
+         }
+
+         .oleo-script-bold {
+             font-family: "Oleo Script", system-ui;
+             font-weight: 700;
+             font-style: normal;
+             margin-top: 20%;
+
+         }
+
+
+     }
+ }

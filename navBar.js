@@ -1,7 +1,7 @@
 let navBar = document.querySelector(".divmenu");
 
 navBar.innerHTML=`
-      <nav class="navmenu" style="background-color: rgba(53, 71, 172, 255)">
+      <nav class="navmenu " style="background-color: rgba(53, 71, 172, 255)">
         <div class="logo-usuario">
           <img src="Imagenes/imagenRostroPrueba.jpg" alt="" id="imagenRostroPrueba" style="text-align: center" />
         </div>

@@ -12,21 +12,19 @@
         rel="stylesheet">
     <link rel="stylesheet" href="estilosBoot.css">
     <link rel="stylesheet" href="tarjetas.css">
-    
+
 
 </head>
 
 <body>
+    <main id="contenedorPrincipal">
 
+        <div class="contenedorOpciones">
+            <div id="contflecha">
 
-   <div id="contflecha">
+                <button><a href="index.html"><img id="flecha" src="iconos/volver-flecha.png" alt=""></a></button>
 
-       <button><a href="index.html"><img id="flecha" src="iconos/volver-flecha.png" alt=""></a></button>
-   </div> 
-
-    <div class="vista-derecha">
-
-        <div class="vista-derecha">
+            </div>
             <div class="nueva-tarjeta">
                 <div class="acordeon-tarjeta">
                     <select>
@@ -36,74 +34,87 @@
                         <option>Otros</option>
                     </select>
                 </div>
-                <a href="ingresoTargeta.html">
-                    <button class="boton-targeta"> Nueva tarjeta</button></a>
-            </div>
-            <!-- imagen -->
-            <div class="tu-tarjeta">
-                <h3>Tu tarjeta</h3>
-                <br>
-                <div class="carrusel-targeta  ">
-
-
-                </div>
-            </div>
-
-            <div>
-                <div class="banco-targeta">
-                    <div class="row cinzel-tipado">
-                        <span>Banco:</span>
-                        <span>Bancolombia</span>
-                    </div>
-                    <div class="row cinzel-tipado">
-                        <span>Fecha:</span>
-                        <span>Enero 2025</span>
-                    </div>
-                    <div class="row cinzel-tipado">
-                        <span>Estado:</span>
-                        <span class="estado">Activo</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="iconoNav">
-                <img src="Imagenes/porcentajePrueba.jpg" alt="" />
-            </div>
-            <div class="targeta-info cinzel-tipado">
                 <div>
-                    <p>Disponible</p>
-                    <span>$4,350</span>
+                    <a href="tarjetas.html"><button class="boton-targeta"> Nueva tarjeta</button></a>
                 </div>
-                <div>
-                    <p>Deuda</p>
-                    <span>-$1,050</span>
-                </div>
-                <div>
-                    <p>Limite</p>
-                    <span>$15,000</span>
-                </div>
-            </div>
-            <!-- Transferencias-->
-            <div class="quick-transfer">
-                <h4>Transferencias a usuarios</h4>
-                <div class="avatares">
-                    <img src="iconos/masIcono.png" alt="nuevo" />
-                    <img src="iconos/personaIcono.png" alt="User" />
-                    <img src="iconos/personaIcono.png" alt="User" />
-                    <img src="iconos/personaIcono.png" alt="User" />
-                </div>
-            </div>
-
-            <!-- Tips -->
-            <div class="tips-card">
-                <h4>Tips</h4>
-                <p>
-                    No gastes en cosas sin importancia que interfieran con tus planes.
-                </p>
-                <a href="#">Ver todos los tips</a>
             </div>
         </div>
-    </div>
+        </div>
+        <div>
+
+        </div>
+        <div class="vista-derecha d-flex flex-column">
+            <h3>Tu tarjeta</h3>
+            <center>
+                <!-- imagen -->
+                <div class="tu-tarjeta">
+
+                    <br>
+                    <div class="carrusel-targeta  ">
+
+
+                    </div>
+                </div>
+            </center>
+        </div>
+
+
+
+
+        <!-- ///////////////////////////////////////// -->
+        <div class="info-tarjeta">
+            <div class="banco-targeta">
+                <div class="row cinzel-tipado">
+                    <span>Banco:</span>
+                    <span>Bancolombia</span>
+                </div>
+                <div class="row cinzel-tipado">
+                    <span>Fecha:</span>
+                    <span>Enero 2025</span>
+                </div>
+                <div class="row cinzel-tipado">
+                    <span>Estado:</span>
+                    <span class="estado">Activo</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="targeta-info cinzel-tipado">
+            <div>
+                <p>Disponible</p>
+                <span>$4,350</span>
+            </div>
+            <div>
+                <p>Deuda</p>
+                <span>-$1,050</span>
+            </div>
+            <div>
+                <p>Limite</p>
+                <span>$15,000</span>
+            </div>
+        </div>
+        <!-- Transferencias-->
+        <div class="quick-transfer">
+            <h4>Transferencias a usuarios</h4>
+            <div class="avatares">
+                <img src="iconos/masIcono.png" alt="nuevo" />
+                <img src="iconos/personaIcono.png" alt="User" />
+                <img src="iconos/personaIcono.png" alt="User" />
+                <img src="iconos/personaIcono.png" alt="User" />
+            </div>
+        </div>
+
+        <!-- Tips -->
+        <div class="tips-card">
+            <h4>Tips</h4>
+            <p>
+                No gastes en cosas sin importancia que interfieran con tus planes.
+            </p>
+            <a href="#">Ver todos los tips</a>
+        </div>
+    </main>
+
 
     <div class="card-form">
 
@@ -131,14 +142,93 @@
     </div>
 
 
-    <script src="carrusel.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
+
+
+
+
+     <footer>
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+            crossorigin="anonymous"></script>
+
+        <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+            <div class="row">
+                <div class="col-lg-3 mb-3"> <a
+                        class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/"
+                        aria-label="Bootstrap"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118 94" role="img"
+                            class="d-block me-2" height="32" width="40">
+                            <title>Bootstrap</title>
+                            <path>
+                            <div class="logoFooter">
+                                <img src="Imagenes/logoFP.png" alt="">
+                            </div></path>
+                        </svg> <span class="fs-5"> <b> PersonalFinances</b></span> </a>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">
+                            Designed and built with all the love in the world by the <a
+                                href="/docs/5.3/about/team">Bootstrap
+                                team</a> with the help of <a
+                                href="https://github.com/twbs/bootstrap/graphs/contributors">our
+                                contributors</a>.
+                        </li>
+                        <li class="mb-2">
+                            Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank"
+                                rel="license noopener">MIT</a>, docs <a
+                                href="https://creativecommons.org/licenses/by/3.0/" target="_blank"
+                                rel="license noopener">CC BY 3.0</a>.
+                        </li>
+                        <li class="mb-2">Currently v5.3.8.</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/">Home</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/">Docs</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/examples">Examples</a></li>
+                        <li class="mb-2"><a href="https://icons.getbootstrap.com/">Icons</a></li>
+                        <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
+                        <li class="mb-2"><a href="https://cottonbureau.com/people/bootstrap" target="_blank"
+                                rel="noopener">Swag
+                                Store</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Guides</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/docs/5.3/getting-started">Getting started</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/examples/starter-template">Starter template</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/webpack">Webpack</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/parcel">Parcel</a></li>
+                        <li class="mb-2"><a href="/docs/5.3/getting-started/vite">Vite</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+
+
+    </footer>
+
+<script src="carrusel.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

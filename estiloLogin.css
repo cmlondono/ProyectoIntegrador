@@ -3,9 +3,36 @@ body {
     color: rgba(53, 71, 172, 255);
     background-color: rgba(250, 250, 252);
 }
+
 label {
     padding-right: 5px;
 }
+
+.logoFooter img {
+    border-radius: 50px !important;
+    width: 40px;
+    margin-top: 4px;
+    margin-left: 2px;
+    
+}
+
+.fs-5 {
+    font-size: 18px;
+    color: #0a0ad4;
+}
+
+.contenedorLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    width: 100%;
+    height: 46px;
+    border: solid 1px rgba(0, 0, 0, 0.304);
+    border-radius: 20px 20px ;
+     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
 .login {
     display: flex;
     gap: 2%;
@@ -13,6 +40,7 @@ label {
     justify-content: space-around;
     padding-top: 10%;
 }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -21,6 +49,7 @@ label {
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
     background-color: rgba(53, 71, 172, 255);
 }
+
 .cajaLogin {
     display: flex;
     flex-direction: column-reverse;
@@ -28,12 +57,14 @@ label {
     width: max-content;
     background-color: rgb(255, 255, 255);
 }
+
 .cajaRegister {
     width: max-content;
     border-radius: 10px;
     background-color: transparent;
     margin-top: 10px;
 }
+
 .cajaLogin:nth-child(1) {
     width: 38%;
     height: 32%;
@@ -43,38 +74,46 @@ label {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     width: max-content;
 }
+
 td {
     border: 1px solid;
     height: 390px;
     width: 500px;
 }
+
 /*Campos del login*/
 .campoLogin {
     border: none;
     border-bottom: 1px solid rgba(53, 71, 172, 255);
     background-color: transparent;
 }
+
 .campoLoginRegistro {
     border: none;
     border-bottom: 1px solid rgb(255, 255, 255);
     background-color: transparent;
     color: white;
 }
+
 /*Elimina el contorno que se marca al clickear por los input*/
 input:focus {
     outline: none;
 }
+
 .campoLoginRegistro::placeholder {
     color: rgba(255, 255, 255, 0.247);
 }
+
 ul {
     padding: 10px;
 }
+
 li {
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
+
 /*boton submit*/
 .botonIniciarSesion {
     border-radius: 8px;
@@ -82,12 +121,14 @@ li {
     background-color: rgba(53, 71, 172, 255);
     color: rgb(255, 255, 255);
 }
+
 .botonRegistrarse {
     border-radius: 8px;
     height: 30px;
     background-color: white;
     color: rgb(0, 0, 0);
 }
+
 .formIniciarSesion {
     display: flex;
     flex-direction: column;
@@ -95,6 +136,7 @@ li {
     justify-content: center;
     margin-bottom: 40px;
 }
+
 .formRegistrarse {
     display: flex;
     flex-direction: column;
@@ -102,9 +144,11 @@ li {
     justify-content: center;
     color: white;
 }
+
 .placeholderblanco::placeholder {
     color: rgb(255, 255, 255);
 }
+
 /* .containter{
     display:flex; 
     flex-direction: row; 
@@ -113,103 +157,178 @@ li {
     background-color: transparent;
 } */
 @media screen and (min-width:431px) {
-    .botonRegistro{
+    .botonRegistro {
         display: none;
     }
-}
-@media screen and (max-width:430px) {
-    /* estilos para inicio de sesión */
-    body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 380px;
-    height: 690px;
-   
-}
-.container .cajaRegister {
-    display:none;
     
 }
-.cajaLogin:nth-child(1) {
-    align-self: stretch;
-    height: 250px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 12px 0px rgb(255, 255, 255);
-    width:200px;
-    font-size: 10px;
-}
-.formIniciarSesion ul{
-margin-top: 25px;
-}
-li {
-    font-size: 8px;
-    height: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: -5px;
+
+@media screen and (min-width:431px) {
+    .botonRegistro {
+        display: none;
+    }
+    .logoFooter img {
+    border-radius: 50px !important;
+    width: 40px;
+    margin-top: 4px;
+    margin-left: 2px;
+    
 }
 
-.formIniciarSesion {
+.fs-5 {
+    font-size: 18px;
+    color: #0a0ad4;
+}
+
+.contenedorLogo {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
+    gap: 10px;
+    margin-top: 18px;
+    width: 100%;
+    height: 46px;
+    border: solid 1px rgba(0, 0, 0, 0.304);
+    border-radius: 20px 20px ;
+     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
 }
-/* estilos para registro */
-.botonRegistro {
-    font-size: 8px;
-    border: none;
-    border-radius: 14px;
-    height: 25px;
-    background-color: white;
-    color: rgb(0, 0, 0);
-    font-weight: 800;
-     
 }
-.cajaRegistro {
+
+@media screen and (max-width:650px) {
+
+    /* estilos para inicio de sesión */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 380px;
+        height: 690px;
+
+    }
+.logoFooter img {
+    border-radius: 50px !important;
+    width: 40px;
+    margin-top: 4px;
+    margin-left: 2px;
+    
+    
+}
+
+.fs-5 {
+    font-size: 18px;
+    color: #0a0ad4;
+}
+
+.contenedorLogo {
     display: flex;
-    flex-direction: column-reverse;
-    border-color: black;
-    width: max-content;
-    background-color: rgb(38, 90, 222);
-    color: rgb(255, 255, 255);
-}
-.campoRegistro{
-    font-size: 12px;
-    border: none;
-    border-bottom: 2px solid rgb(255, 255, 255);
-    background-color: transparent;
-    color: rgb(254, 254, 254);
-}
-.formRegistro label{
-    color: rgb(255, 255, 255);
-    font-weight: 800;
-    font-size: 10px;
-}
-.cajaRegistro:nth-child(1) {
-    align-self: stretch;
-    height: 250px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px rgb(6, 0, 0);
-    width:200px;
-    font-size: 10px;
-}
-.campoRegistro::placeholder {
-    color: rgba(255, 255, 255, 0.482);
-  font-size: 8px;
-  font-weight: 200;
-}
-.formRegistro ul {
-    margin-top:  -25px;
-}
-.formRegistro{
-     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
+    gap: 10px;
+    margin-top: 18px;
+    width: 200px;
+    height: 46px;
+    border: solid 1px rgba(0, 0, 0, 0.304);
+    border-radius: 20px 20px ;
+     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+     margin-bottom: 650px ;
+     margin-left: 20px;
 }
+
+
+
+
+    .container .cajaRegister {
+        display: none;
+
+    }
+
+    .cajaLogin:nth-child(1) {
+        align-self: stretch;
+        height: 250px;
+        border-radius: 10px;
+       box-shadow: 2px 0px 5px rgba(1, 6, 4, 0.233);
+        width: 200px;
+        font-size: 10px;
+    }
+
+    .formIniciarSesion ul {
+        margin-top: 25px;
+    }
+
+    li {
+        font-size: 8px;
+        height: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: -5px;
+    }
+
+    .formIniciarSesion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    /* estilos para registro */
+    .botonRegistro {
+        font-size: 8px;
+        border: none;
+        border-radius: 14px;
+        height: 25px;
+        background-color: white;
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+
+    }
+
+    .cajaRegistro {
+        display: flex;
+        flex-direction: column-reverse;
+        border-color: black;
+        width: max-content;
+        background-color: rgb(38, 90, 222);
+        color: rgb(255, 255, 255);
+    }
+
+    .campoRegistro {
+        font-size: 12px;
+        border: none;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        background-color: transparent;
+        color: rgb(254, 254, 254);
+    }
+
+    .formRegistro label {
+        color: rgb(255, 255, 255);
+        font-weight: 800;
+        font-size: 10px;
+    }
+
+    .cajaRegistro:nth-child(1) {
+        align-self: stretch;
+        height: 250px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgb(6, 0, 0);
+        width: 200px;
+        font-size: 10px;
+    }
+
+    .campoRegistro::placeholder {
+        color: rgba(255, 255, 255, 0.482);
+        font-size: 8px;
+        font-weight: 200;
+    }
+
+    .formRegistro ul {
+        margin-top: -25px;
+    }
+
+    .formRegistro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
 }
