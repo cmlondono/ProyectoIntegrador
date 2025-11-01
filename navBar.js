@@ -12,6 +12,11 @@ navBar.innerHTML = `
         <div class="container-opciones-perfil-medio">
 
           <div class="opcion">
+            <img src="iconos/dashBoardIcono.png" alt="" class="iconoNav" />
+            <a style="text-decoration: none; color: white" href="index.html"><span>DashBoard</span></a>
+          </div>
+
+          <div class="opcion">
             <a style="text-decoration: none; color: white" href="perfil.html">
             <img src="iconos/perfileIcono.png" alt="" class="iconoNav" /></a>
             <a style="text-decoration: none; color: white" href="perfil.html"><span>Perfil</span></a>
